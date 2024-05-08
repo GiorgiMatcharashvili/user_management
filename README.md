@@ -6,15 +6,24 @@ This Django REST API provides endpoints for managing users, including registrati
 
 To install and run this User Management API, follow these steps:
 
-1. **Install Docker and Docker Compose**: Ensure that Docker and Docker Compose are installed on your system. Docker Compose is used to manage multi-container Docker applications. You can download and install Docker from the official website: [Docker](https://www.docker.com/).
+1. **Clone the Repository:**
+2. **Install Docker and Docker Compose:**
+- Follow the official Docker documentation to install Docker: [Install Docker](https://docs.docker.com/get-docker/)
+- Follow the official Docker Compose documentation to install Docker Compose: [Install Docker Compose](https://docs.docker.com/compose/install/)
 
-2. **Build and Run Docker Compose**:
-   Run the following commands in your terminal:
+3. **Rename the Environment File:**
+- Locate the `.env.example` file in the project root directory.
+- Rename it to `.env`:
+  ```
+  mv .env.example .env
+  ```
 
-   ```bash
-   docker-compose build
-   docker-compose up
-
+4. **Build and run docker compose:**
+- Run these commands:
+  ```
+  docker-compose build
+  docker-compose up
+  ```
 ## Technologies Used
 
 ### Django
